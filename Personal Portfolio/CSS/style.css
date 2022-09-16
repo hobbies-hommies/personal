@@ -1,0 +1,78 @@
+body {
+    background-color: #6d7aa6;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #102761;
+}
+
+a:hover {
+    color: #034757;
+}
+
+header a {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9rem;
+}
+
+header img {
+    width: 10%;
+}
+
+#aboutme {
+    margin-top: 12.5rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme img {
+    width: 100%;
+    position: absolute;
+}
+
+#aboutme article {
+    background-color: #6d7aa6;
+    position: absolute;
+    z-index: 1;
+}
+
+#projects {
+    margin-top: 300px;
+}
+
+#projects .flexi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#projects .flexi div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#projects img {
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+#skills .flexi {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
