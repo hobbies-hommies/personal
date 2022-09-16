@@ -2,6 +2,8 @@ body {
     background-color: #6d7aa6;
     margin: 0;
     text-align: center;
+    font-family: sans-serif;
+    position: relative;
 }
 
 a {
@@ -13,24 +15,28 @@ a:hover {
 }
 
 header a {
-    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1.5rem;
 }
 
 header {
-    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #6d7aa6;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    height: 9rem;
 }
 
 header img {
+    margin-left: 2rem;
     width: 10%;
 }
 
 #aboutme {
-    margin-top: 12.5rem;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,17 +44,15 @@ header img {
 
 #aboutme img {
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 #aboutme article {
+    position:absolute;
+    margin-right: 10%;
+    width: 50%;
     background-color: #6d7aa6;
-    position: absolute;
     z-index: 1;
-}
-
-#projects {
-    margin-top: 300px;
 }
 
 #projects .flexi{
@@ -71,8 +75,55 @@ header img {
     width: 80%;
 }
 
+#skills {
+    margin-bottom: 1rem;
+}
+
 #skills .flexi {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: center;
+    line-height: 3;
+}
+#skills .flexi i {
+    margin: 1rem 1rem;
+}
+
+#aboutme .contact {
+    font-size: 1.5rem;
+    padding: 5rem 2rem;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 878px) {
+    header img {
+        width: 15%;
+    }
+    header a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    #aboutme article {
+        margin-top: 4rem;
+        width: 65%;
+    }
+    #aboutme .contact {
+        font-size: 1rem;
+    }
+    #projects .flexi div {
+        width: 80%;
+    }
+    header a {
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header a {
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
 }
